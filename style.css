@@ -1,0 +1,276 @@
+          
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f7fc;
+            color: #1e2a3e;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* head */
+        .hero {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0f2b3d, #1b7e5c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.3px;
+        }
+
+        .hero .sub {
+            color: #4a627a;
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #cbdcec;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        .tagline {
+            background: #e9f0f5;
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #1f6e4a;
+            margin-top: 1rem;
+        }
+
+     /* Main layout: left optional selection area + right results display */
+        .builder-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .config-panel {
+            flex: 1.2;
+            min-width: 280px;
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+            padding: 1.8rem 1.5rem;
+            transition: all 0.2s;
+        }
+
+        .result-panel {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+            padding: 1.8rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+       /* Form Styles */
+        .component-group {
+            margin-bottom: 1.8rem;
+            border-bottom: 1px solid #e2edf2;
+            padding-bottom: 1.2rem;
+        }
+
+        .component-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #1f4e3c;
+        }
+
+        .component-group label i {
+            font-size: 1.3rem;
+        }
+
+        .price-badge {
+            font-size: 0.75rem;
+            background: #eef2f6;
+            border-radius: 30px;
+            padding: 0.2rem 0.6rem;
+            font-weight: normal;
+            color: #2c5a2e;
+            margin-left: 10px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: 20px;
+            border: 1px solid #cbdde9;
+            background: #ffffff;
+            font-size: 0.95rem;
+            transition: 0.2s;
+            outline: none;
+            cursor: pointer;
+        }
+
+        select:focus, input:focus {
+            border-color: #2c9b6e;
+            box-shadow: 0 0 0 3px rgba(44, 155, 110, 0.2);
+        }
+
+        .custom-price-row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .custom-price-row input {
+            flex: 2;
+            min-width: 120px;
+        }
+
+        .custom-price-row span {
+            font-size: 0.85rem;
+            color: #4b6a7c;
+            background: #f0f5f9;
+            padding: 0 10px;
+            border-radius: 30px;
+            line-height: 2.2;
+        }
+
+        .btn-reset {
+            background: #eef2f7;
+            border: none;
+            padding: 0.7rem 1.2rem;
+            border-radius: 40px;
+            font-weight: 500;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            color: #2c5a4b;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        .btn-reset:hover {
+            background: #e2eaf1;
+            transform: translateY(-1px);
+        }
+
+        /* Total Price / List Card on the Right */
+        .total-card {
+            background: linear-gradient(105deg, #1f2f38 0%, #143026 100%);
+            border-radius: 28px;
+            padding: 1.5rem;
+            color: white;
+            margin-bottom: 1.8rem;
+            text-align: center;
+        }
+
+        .total-price {
+            font-size: 2.6rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .total-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 0.3rem;
+        }
+
+        .saving-tip {
+            background: #f9c74f20;
+            backdrop-filter: blur(4px);
+            border-radius: 60px;
+            padding: 0.3rem 1rem;
+            display: inline-block;
+            margin-top: 0.8rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .part-list {
+            flex: 1;
+            margin-top: 0.5rem;
+        }
+
+        .part-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e5edf2;
+            flex-wrap: wrap;
+        }
+
+        .part-name {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .part-price {
+            font-family: monospace;
+            font-weight: 600;
+            color: #2b7a55;
+            background: #ecf9f2;
+            padding: 0.2rem 0.6rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+        }
+
+        .note {
+            font-size: 0.75rem;
+            color: #7f8e9e;
+            text-align: center;
+            margin-top: 1.5rem;
+            border-top: 1px solid #deebf1;
+            padding-top: 1rem;
+        }
+
+        .badge-rec {
+            background: #fccd3e;
+            font-size: 0.7rem;
+            padding: 0.1rem 0.5rem;
+            border-radius: 30px;
+            color: #2c2c2c;
+            margin-left: 8px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 780px) {
+            body {
+                padding: 1rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .config-panel, .result-panel {
+                padding: 1.2rem;
+            }
+        }
+
+        /* Simulated Icon */
+        .emoji-icon {
+            font-size: 1.2rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.75rem;
+            color: #6e889b;
+        }
+    
