@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Cost-effective PC Build Assistant | Smart Configuration · Money-saving List</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+    <body>
+<div class="container">
+    <div class="hero">
+        <!--  /*title*/-->
+        <h1> Cost-effective PC Build Assistant</h1>
+        <div class="sub">student made</div>
+        <div class="tagline"> GOOD TO USE,CHEAP TO BUY</div>
+    </div>
+    <div class="builder-layout">
+        <div class="config-panel">
+            <h3 style="margin-bottom: 1rem; font-weight: 600;"> Customized core components</h3>
+            <p style="font-size: 0.85rem; color: #527a6e; margin-bottom: 1.4rem;">Click the dropdown to select a popular model, or manually enter a price to simulate real-time market conditions.</p>
+            <!--  /*start to do the statistical question*/-->
+            <div class="component-group">
+                <label><span class="emoji-icon"></span> CPU <span class="price-badge">cheap but best</span></label>
+                <select id="cpuSelect">
+                    /* list of the CPU*/
+                    <option value="i5-12400F|799" selected>Intel i5-12400F  - ¥799</option>
+                    <option value="R5-5600|749">AMD Ryzen 5 5600 - ¥749</option>
+                    <option value="i5-13400F|1199">Intel i5-13400F - ¥1199</option>
+                    <option value="R7-5700X|1099">AMD Ryzen 7 5700X - ¥1099</option>
+                    <option value="R5-7500F|999">AMD Ryzen 5 7500F - ¥999</option>
+                </select>
+                <div class="custom-price-row">
+                    <input type="number" id="cpuCustomPrice" placeholder="users-defined(¥)" step="1" value="">
+                    <span>Override default price</span>
+                </div>
+            </div>
+<div class="component-group">
+                <label><span class="emoji-icon"></span>  GPU <span class="price-badge">most important for gaming</span></label>
+                <select id="gpuSelect">
+                    /* list of the GPU*/
+                    <option value="RTX4060|2199" selected>RTX 4060 8G - ¥2199 (DLSS3)</option>
+                    <option value="RX6750GRE|2049">RX 6750 GRE 12G - ¥2049 </option>
+                    <option value="RTX3060Ti|1899">RTX 3060Ti 8G - ¥1899</option>
+                    <option value="RX6650XT|1699">RX 6650 XT 8G - ¥1699</option>
+                    <option value="RTX4070|3899">RTX 4070 12G - ¥3899 </option>
+                    <option value="RTX4070 Ti|5800">RTX 4070 Ti 24G - ¥5800</option>
+                </select>
+                <div class="custom-price-row">
+                    <input type="number" id="gpuCustomPrice" placeholder="users-defined(¥)" step="1">
+                    <span>Override default price</span>
+                </div>
+            </div>
+ <div class="component-group">
+                <label><span class="emoji-icon"></span> Motherboard</label>
+                <select id="mbSelect">
+                 /* list of the motherboard*/
+                    <option value="B660M|549" selected>B660M - ¥549</option>
+                    <option value="B550M|529">B550M PRO - ¥529</option>
+                    <option value="B760M|699">B760M D4 - ¥699</option>
+                    <option value="A620|479">A620M - ¥479 </option>
+                </select>
+                <div class="custom-price-row">
+                    <input type="number" id="mbCustomPrice" placeholder="users-defined(¥)">
+                </div>
+            </div>
+
+            <div class="component-group">
+                <label><span class="emoji-icon"></span> RAM </label>
+                <select id="ramSelect">
+                     /* list of the RAM*/
+                    <option value="DDR4 16G 3200|239" selected>DDR4 16GB (8G*2) 3200MHz - ¥239</option>
+                    <option value="DDR4 32G 3200|419">DDR4 32GB (16G*2) - ¥419</option>
+                    <option value="DDR5 16G 5200|359">DDR5 16GB 5200MHz - ¥359</option>
+                    <option value="DDR5 32G 6000|679">DDR5 32GB 6000MHz - ¥679</option>
+                </select>
+                <div class="custom-price-row">
+                    <input type="number" id="ramCustomPrice" placeholder="users-defined(¥)">
+                </div>
+            </div>
+<div class="component-group">
+                <label><span class="emoji-icon"></span> SSD</label>
+                <select id="ssdSelect">
+                     /* list of the SSD*/
+                    <option value="1TB NVMe PCIe3.0|359" selected>1TB NVMe PCIe 3.0 - ¥359</option>
+                    <option value="512GB NVMe|239">512GB NVMe - ¥239</option>
+                    <option value="1TB NVMe PCIe4.0|449">1TB PCIe 4.0 fast - ¥449</option>
+                    <option value="2TB NVMe|699">2TB NVMe big - ¥699</option>
+                </select>
+                <div class="custom-price-row">
+                    <input type="number" id="ssdCustomPrice" placeholder="users-defined(¥)">
+                </div>
+            </div>
+
+            <div class="component-group">
+                <label><span class="emoji-icon"></span>PSU</label>
+                <select id="psuSelect">
+                     /* list of the PSU*/
+                    <option value="550W |259" selected>550W  - ¥259</option>
+                    <option value="650W |389">650W - ¥389</option>
+                    <option value="750W |479">750W - ¥479</option>
+                </select>
+                <div class="custom-price-row">
+                    <input type="number" id="psuCustomPrice" placeholder="users-defined(¥)">
+                </div>
+            </div>
+
+            <div class="component-group">
+                <label><span class="emoji-icon"></span> Case</label>
+                <select id="caseSelect">
+                     /* list of the case*/
+                    <option value="Side-transparent ATX case|159" selected>Side-transparent ATX case - ¥159</option>
+                    <option value="M-ATX Small Case|129">M-ATX Small Case - ¥129</option>
+                    <option value="Ocean view panoramic computer case|239">Ocean view panoramic computer case - ¥239</option>
+                </select>
+                <div class="custom-price-row">
+                    <input type="number" id="caseCustomPrice" placeholder="users-defined(¥)">
+                </div>
+            </div>
+             <!-- /* the reset bottom for the choice*/-->
+            <button class="btn-reset" id="resetBtn">⟳ Restore recommended cost-effective configuration</button>
+            <div class="note"> Tip: Manually entering a price can simulate current promotions or used market conditions, and the total price below updates in real-time.</div>
+        </div>
+        <div class="result-panel">
+            <div class="total-card">
+                <div class="total-label"> Estimated Total Price (Complete Machine)</div>
+                <div class="total-price" id="totalPriceDisplay">¥0</div>
+                <div class="saving-tip" id="performanceTip"> Gaming/Workstation Balanced Configuration</div>
+            </div>
+           <!--  /* size of my part list*/-->
+            <div style="font-weight: 600; margin-bottom: 12px; font-size: 1.2rem;"> Configuration List Details</div>
+            <div class="part-list" id="partsListContainer">
+                
+            </div>
+            <div class="note">
+                 All accessories are high-cost-performance recommendations from the market, supporting manual price modification for precise budgeting.
+                <br> *Price fluctuations are for reference only; compatibility should be verified before assembly.
+            </div>
+        </div>
+    </div>
+     <!--the footer-->
+    <footer> JUST FOR FUN</footer>
+     </div>
+<script src="script.js"></script>
+  
+</body>
+</html>
